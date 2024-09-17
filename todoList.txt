@@ -1,0 +1,27 @@
+1. Project Structure
+2. Controllers file and define function
+3. API end point define
+4. Payment system utility functions
+5. Create Model Schema files
+    a) categoriesModel
+    b) brandsModel
+    c) productsModel
+    d) slidersModel
+    e) reviewsModel
+    f) cartsModel
+    g) detailsModel
+    h) wishesModel
+    i) usersModel
+    j) profilesModel
+    k) invoicesModel
+    l) invoiceProductsModel
+6. Understanding the payment methods flow.
+
+
+
+
+password: susanta1992
+
+
+
+Video pausing time: 
