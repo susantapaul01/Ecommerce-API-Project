@@ -1,5 +1,5 @@
 export const PORT = 5050
-export const DATABASE = "mongodb+srv://susanta:susanta1992@cluster0.ji377.mongodb.net/task_manager_API?retryWrites=true&w=majority&appName=Cluster0"
+export const DATABASE = "mongodb+srv://susanta:susanta1992@cluster0.ji377.mongodb.net/Ecommerce-API-Project?retryWrites=true&w=majority&appName=Cluster0"
 
 export const JWT_KEY = '445235r5rhgt12'
 export const JWT_EXPIRE_TIME = 30*24*60*60

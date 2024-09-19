@@ -16,6 +16,11 @@
     k) invoicesModel
     l) invoiceProductsModel
 6. Understanding the payment methods flow.
+7. Schema & model Define:
+    a) brandsModel
+    b) categoriesModel
+    c) productsModel
+    d) productDetailsModel
 
 
 
@@ -23,5 +28,4 @@
 password: susanta1992
 
 
-
-Video pausing time: 
+Video pausing time: 38 minute
