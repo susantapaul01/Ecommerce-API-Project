@@ -42,7 +42,7 @@ export const CreateUserProfile = async (req, res) => {
 
 export const UpdateUserProfile = async (req, res) => {
     try {
-        return res.json({ status: "success", messege: "UpdateUserProfile successful"});
+        return res.json({ status: "success", messege: "Update User Profile successful"});
     }
     catch(e) {
         return res.json({ status: "fail", messege: e.toString() });

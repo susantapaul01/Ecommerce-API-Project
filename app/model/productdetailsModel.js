@@ -21,3 +21,4 @@ const dataSchema = new mongoose.Schema(
     }
 )
 const productDetailsModel = mongoose.model('productDetails', dataSchema);
+export default productDetailsModel;

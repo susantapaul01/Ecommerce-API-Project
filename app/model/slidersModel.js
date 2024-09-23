@@ -4,9 +4,8 @@ const dataSchema = new mongoose.Schema(
         title: { type: String, required: true },
         des: { type: String, required: true },
         price: { type: String, required: true },
-        img: { type: String, required: true },
-        productId: { type: mongoose.Schema.Types.ObjectId, required: true }
-
+        image: { type: String, required: true },
+        productID: { type: mongoose.Schema.Types.ObjectId, required: true },
     },
     {
         timestamps: true,
@@ -14,4 +13,6 @@ const dataSchema = new mongoose.Schema(
     }
 )
 
-const productSlidersModel = mongoose.model('productSliders', dataSchema);
+const slidersModel = mongoose.model('productsliders', dataSchema);
+export default slidersModel;
+

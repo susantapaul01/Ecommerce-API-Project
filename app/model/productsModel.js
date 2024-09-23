@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-const dataSchema = new Schema(
+const dataSchema = new mongoose.Schema(
     {
         title: { type: String, required: true },
         shortDes: { type: String, required: true },
@@ -9,9 +9,9 @@ const dataSchema = new Schema(
         image: { type: String, required: true },
         star: { type: String, required: true },
         stock: { type: String, required: true },
-        remark: { type: String, required: true },
-        categoryId: { type: mongoose.Schema.Types.ObjectId, required: true },
-        brandId: { type: mongoose.Schema.Types.ObjectId, required: true }
+        remark: { type: String, required: true },    
+        categoryID: { type: mongoose.Schema.Types.ObjectId, required: true },
+        brandID: { type: mongoose.Schema.Types.ObjectId, required: true }
     },
     {
         timestamps: true,
@@ -19,4 +19,5 @@ const dataSchema = new Schema(
     }
 )
 
-const productModel = mongoose.model('products', dataSchema);
+const productsModel = mongoose.model('products', dataSchema);
+export default productsModel;

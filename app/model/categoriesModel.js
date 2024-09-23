@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-let dataSchema = new Schema(
+let dataSchema = new mongoose.Schema(
     {
         categoryName: {
             type: String,
@@ -18,4 +18,5 @@ let dataSchema = new Schema(
     }
 )
 
-const categoryModel = mongoose.model('categories', dataSchema);
+const categoriesModel = mongoose.model('categories', dataSchema);
+export default categoriesModel;

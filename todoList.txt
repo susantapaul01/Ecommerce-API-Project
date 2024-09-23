@@ -16,11 +16,13 @@
     k) invoicesModel
     l) invoiceProductsModel
 6. Understanding the payment methods flow.
-7. Schema & model Define:
-    a) brandsModel
-    b) categoriesModel
-    c) productsModel
-    d) productDetailsModel
+7. Database Schema & model Define:
+8. Postman HTTP URL
+9. Demo Data Insert
+10. Create Brand API
+11. Create category API
+12. Create product diff type of Listing API
+13. Demo data insert for brands, product & category
 
 
 

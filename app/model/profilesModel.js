@@ -23,4 +23,5 @@ const dataSchema = new mongoose.Schema(
         versionKey: false
     }
 )
-const profileModel = mongoose.model('usersprofile', dataSchema);
+const profilesModel = mongoose.model('profiles', dataSchema);
+export default profilesModel;

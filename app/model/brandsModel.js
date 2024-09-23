@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const dataSchema = new Schema(
+const dataSchema = new mongoose.Schema(
     {
         brandName: {
             type: String,
@@ -20,3 +20,4 @@ const dataSchema = new Schema(
 )
 
 const brandsModel = mongoose.model('brands', dataSchema);
+export default brandsModel;
