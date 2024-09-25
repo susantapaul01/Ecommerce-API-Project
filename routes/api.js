@@ -19,10 +19,10 @@ router.get('/readUserProfile', UserController.ReadUserProfile);
 router.post('/updateUserProfile', UserController.UpdateUserProfile);
 
 // ==== BrandController router
-router.get('/brandList', BrandList);
+router.get('/brandList', BrandList);         // Working Done
 
 // ==== Caregories router
-router.get('/categoryList', CategoryList);  
+router.get('/categoryList', CategoryList);  // Working Done
 
 // ==== CartListController router
 router.post('/createCart', CardListController.CreateCart);
@@ -36,11 +36,11 @@ router.get('/readWishList', WishListController.ReadWishList);
 router.post('/removeWish', WishListController.RemoveWish);
 
 // ==== ProductController router
-router.get('/productListByCategory', ProductController.ProductListByCategory);
-router.get('/productListByRemark', ProductController.ProductListByRemark);
-router.get('/productListByBrand/:brandId', ProductController.ProductListByBrand); // working...
-router.get('/productListBySlider', ProductController.ProductListBySlider);
-router.get('/productDetailsID', ProductController.ProductDetailsID);
+router.get('/productListByCategory/:categoryId', ProductController.ProductListByCategory);  // Working Done
+router.get('/productListByBrand/:brandId', ProductController.ProductListByBrand);           // Working Done
+router.get('/productListByRemark/:remark', ProductController.ProductListByRemark);          // Working Done 
+router.get('/productListBySlider', ProductController.ProductListBySlider);                  // Working Done
+router.get('/productDetailsById/:productId', ProductController.ProductDetailsById);         // Working Done 
 router.get('/productListByKeyword', ProductController.ProductListByKeyword);
 router.get('/productReviewListByID', ProductController.ProductReviewListByID);
 

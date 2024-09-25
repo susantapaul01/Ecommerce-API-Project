@@ -1,33 +1,32 @@
-1. Project Structure
-2. Controllers file and define function
-3. API end point define
-4. Payment system utility functions
-5. Create Model Schema files
-    a) categoriesModel
-    b) brandsModel
-    c) productsModel
-    d) slidersModel
-    e) reviewsModel
-    f) cartsModel
-    g) detailsModel
-    h) wishesModel
-    i) usersModel
-    j) profilesModel
-    k) invoicesModel
-    l) invoiceProductsModel
-6. Understanding the payment methods flow.
-7. Database Schema & model Define:
-8. Postman HTTP URL
-9. Demo Data Insert
-10. Create Brand API
-11. Create category API
-12. Create product diff type of Listing API
-13. Demo data insert for brands, product & category
+1. Project Structure 
+2. Controllers file and define function 
+3. API end point define 
+4. Payment system utility functions 
+5. Create Model Schema files 
+    a) categoriesModel 
+    b) brandsModel 
+    c) productsModel 
+    d) slidersModel 
+    e) reviewsModel 
+    f) cartsModel 
+    g) detailsModel 
+    h) wishesModel 
+    i) usersModel 
+    j) profilesModel 
+    k) invoicesModel 
+    l) invoiceProductsModel 
+6. Understanding the payment methods flow. 
+7. Database Schema & model Define: 
+8. Postman HTTP URL 
+9. Demo Data Insert 
+10. Create Brand API 
+11. Create category API 
+12. Create product diff type of Listing API 
+13. Demo data insert for brands, product & category 
 
 
+password: susanta1992 
 
 
-password: susanta1992
+Video pausing time: 1:45 h 
 
-
-Video pausing time: 38 minute

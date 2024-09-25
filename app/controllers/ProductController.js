@@ -1,23 +1,15 @@
-import { ListByBrandServices, SlidersListServices } from "../services/ProductServices.js"
+import { ListByBrandServices, ListByCategoryServices, ListByRemarkServices, ProductDetailsByIdServices, SlidersListServices } from "../services/ProductServices.js"
 
 export const ProductListByCategory = async (req, res) => {
-    // try {
-    //     return res.json({ status: "success", messege: "Product List By Category successful"});
-    // }
-    // catch(e) {
-    //     return res.json({ status: "fail", messege: e.toString() });
-    // }
+    let result = await ListByCategoryServices(req);
+    return res.json(result);
 }
 
 
 
 export const ProductListByRemark = async (req, res) => {
-    // try {
-    //     return res.json({ status: "success", messege: "Product List By Remark successful"});
-    // }
-    // catch(e) {
-    //     return res.json({ status: "fail", messege: e.toString() });
-    // }
+    let result = await ListByRemarkServices(req);
+    return res.json(result);
 }
 
 
@@ -36,8 +28,9 @@ export const ProductListBySlider = async (req, res) => {
 
 
 
-export const ProductDetailsID = async (req, res) => {
-    
+export const ProductDetailsById = async (req, res) => {
+    let result = await ProductDetailsByIdServices(req);
+    return res.json(result);
 }
 
 
