@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 const dataSchema = new mongoose.Schema(
     {
-        userId: { type: mongoose.Schema.Types.ObjectId, required: true },
+        userID: { type: mongoose.Schema.Types.ObjectId, required: true },
         cus_add: { type: String },
         cus_city: { type: String },
         cus_country: { type: String },

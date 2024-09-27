@@ -28,5 +28,5 @@
 password: susanta1992 
 
 
-Video pausing time: 1:45 h 
+Video pausing time: 1:10 h 
 

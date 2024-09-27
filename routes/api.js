@@ -8,15 +8,16 @@ import * as CardListController from "../app/controllers/CardListController.js";
 import * as WishListController from "../app/controllers/WishListController.js";
 import * as ProductController from "../app/controllers/ProductController.js";
 import * as InvoiceController from "../app/controllers/InvoiceController.js";
+import authMiddleware from "../app/middlewares/authMiddleware.js";
 
 
 // ==== UserController router
 router.post('/registration', UserController.Registration);
-router.post('/login', UserController.Login);
-router.post('/verifyLogin', UserController.VerifyLogin);
-router.post('/createUserProfile', UserController.CreateUserProfile);
-router.get('/readUserProfile', UserController.ReadUserProfile);
-router.post('/updateUserProfile', UserController.UpdateUserProfile);
+router.post('/login', UserController.Login);                                            // Working Done
+router.post('/verifyLogin', UserController.VerifyLogin);                                // Working Done
+router.post('/createUserProfile', authMiddleware, UserController.CreateUserProfile);    // Working Done
+router.get('/readUserProfile', authMiddleware, UserController.ReadUserProfile);         // Working Done
+router.post('/updateUserProfile', authMiddleware, UserController.UpdateUserProfile);    // Working Done
 
 // ==== BrandController router
 router.get('/brandList', BrandList);         // Working Done
@@ -36,13 +37,13 @@ router.get('/readWishList', WishListController.ReadWishList);
 router.post('/removeWish', WishListController.RemoveWish);
 
 // ==== ProductController router
-router.get('/productListByCategory/:categoryId', ProductController.ProductListByCategory);  // Working Done
 router.get('/productListByBrand/:brandId', ProductController.ProductListByBrand);           // Working Done
-router.get('/productListByRemark/:remark', ProductController.ProductListByRemark);          // Working Done 
+router.get('/productListByCategory/:categoryId', ProductController.ProductListByCategory);  // Working Done
 router.get('/productListBySlider', ProductController.ProductListBySlider);                  // Working Done
 router.get('/productDetailsById/:productId', ProductController.ProductDetailsById);         // Working Done 
-router.get('/productListByKeyword', ProductController.ProductListByKeyword);
-router.get('/productReviewListByID', ProductController.ProductReviewListByID);
+router.get('/productListByRemark/:remark', ProductController.ProductListByRemark);          // Working Done 
+router.get('/productListByKeyword/:keyword', ProductController.ProductListByKeyword);       // Working Done
+router.get('/productReviewListByID/:productId', ProductController.ProductReviewListByID);   // Working Done
 
 // Review
 router.post('/createProductReview', ProductController.CreateProductReview);

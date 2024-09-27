@@ -1,4 +1,4 @@
-import { ListByBrandServices, ListByCategoryServices, ListByRemarkServices, ProductDetailsByIdServices, SlidersListServices } from "../services/ProductServices.js"
+import { ListByBrandServices, ListByCategoryServices, ListByRemarkServices, ListKeywordByService, ProductDetailsByIdServices, ReviewListByService, SlidersListServices } from "../services/ProductServices.js"
 
 export const ProductListByCategory = async (req, res) => {
     let result = await ListByCategoryServices(req);
@@ -36,23 +36,15 @@ export const ProductDetailsById = async (req, res) => {
 
 
 export const ProductListByKeyword = async (req, res) => {
-    // try {
-    //     return res.json({ status: "success", messege: "Product List By Keyword successful"});
-    // }
-    // catch(e) {
-    //     return res.json({ status: "fail", messege: e.toString() });
-    // }
+    let result = await ListKeywordByService(req);
+    return res.json(result);
 }
 
 
 
 export const ProductReviewListByID = async (req, res) => {
-    // try {
-    //     return res.json({ status: "success", messege: "Product Review List By ID successful"});
-    // }
-    // catch(e) {
-    //     return res.json({ status: "fail", messege: e.toString() });
-    // }
+    let result = await ReviewListByService(req);
+    return res.json(result);
 }
 
 
