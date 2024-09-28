@@ -2,9 +2,10 @@ import mongoose from "mongoose";
 
 const dataSchema = new mongoose.Schema(
     {
-        usersId: { type: mongoose.Schema.Types.ObjectId, required: true },
+        userId: { type: mongoose.Schema.Types.ObjectId, required: true },
         productId: { type: mongoose.Schema.Types.ObjectId, required: true },
         color: { type: String, required: true },
+        qty: { type: String, required: true },
         size: { type: String, required: true }
     },
     {

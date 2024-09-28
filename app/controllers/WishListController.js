@@ -1,28 +1,18 @@
+import { CreateWishServer, ReadWishListServer, RemoveWishServer } from "../services/wishListServer.js";
+
 export const CreateWish = async (req, res) => {
-    try {
-        return res.json({ status: "success", messege: "CreateWish successful"});
-    }
-    catch(e) {
-        return res.json({ status: "fail", messege: e.toString() });
-    }
+    let result = await CreateWishServer(req);
+    return res.json(result);
 }
 
 
 export const ReadWishList = async (req, res) => {
-    try {
-        return res.json({ status: "success", messege: "ReadWishList successful"});
-    }
-    catch(e) {
-        return res.json({ status: "fail", messege: e.toString() });
-    }
+    let result = await ReadWishListServer(req);
+    return res.json(result);
 }
 
 
 export const RemoveWish = async (req, res) => {
-    try {
-        return res.json({ status: "success", messege: "RemoveWish successful"});
-    }
-    catch(e) {
-        return res.json({ status: "fail", messege: e.toString() });
-    }
+    let result = await RemoveWishServer(req);
+    return res.json(result);    
 }

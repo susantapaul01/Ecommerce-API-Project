@@ -11,32 +11,32 @@ import * as InvoiceController from "../app/controllers/InvoiceController.js";
 import authMiddleware from "../app/middlewares/authMiddleware.js";
 
 
-// ==== UserController router
-router.post('/registration', UserController.Registration);
+// ==== User Controller router
+// router.post('/registration', UserController.Registration);
 router.post('/login', UserController.Login);                                            // Working Done
 router.post('/verifyLogin', UserController.VerifyLogin);                                // Working Done
 router.post('/createUserProfile', authMiddleware, UserController.CreateUserProfile);    // Working Done
 router.get('/readUserProfile', authMiddleware, UserController.ReadUserProfile);         // Working Done
 router.post('/updateUserProfile', authMiddleware, UserController.UpdateUserProfile);    // Working Done
 
-// ==== BrandController router
+// ==== Brand Controller router
 router.get('/brandList', BrandList);         // Working Done
 
 // ==== Caregories router
 router.get('/categoryList', CategoryList);  // Working Done
 
-// ==== CartListController router
-router.post('/createCart', CardListController.CreateCart);
-router.post('/updateCart', CardListController.UpdateCart);
-router.get('/readCartList', CardListController.ReadCartList);
-router.post('/removeCart', CardListController.RemoveCart);
+// ==== Cart List Controller router
+router.post('/createCart', authMiddleware, CardListController.CreateCart);      // Working Done
+router.post('/updateCart', authMiddleware, CardListController.UpdateCart);      // Working Done
+router.get('/readCartList', authMiddleware, CardListController.ReadCartList);   // Working Done
+router.post('/removeCart', authMiddleware, CardListController.RemoveCart);      // Working Done
 
-// ==== WishListController router
-router.post('/createWish', WishListController.CreateWish);
-router.get('/readWishList', WishListController.ReadWishList);
-router.post('/removeWish', WishListController.RemoveWish);
+// ==== Wish List Controller router
+router.post('/createWish', authMiddleware, WishListController.CreateWish);      // Working Done
+router.get('/readWishList', authMiddleware, WishListController.ReadWishList);   // Working Done
+router.post('/removeWish', authMiddleware, WishListController.RemoveWish);      // Working Done
 
-// ==== ProductController router
+// ==== Product Controller router
 router.get('/productListByBrand/:brandId', ProductController.ProductListByBrand);           // Working Done
 router.get('/productListByCategory/:categoryId', ProductController.ProductListByCategory);  // Working Done
 router.get('/productListBySlider', ProductController.ProductListBySlider);                  // Working Done
