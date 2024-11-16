@@ -1,14 +1,14 @@
 import express from "express";
 const router = express.Router();
 
-import * as UserController from "../app/controllers/UserController.js"
-import { BrandList } from "../app/controllers/BrandsController.js";
-import { CategoryList } from "../app/controllers/CategoryController.js";
-import * as CardListController from "../app/controllers/CardListController.js";
-import * as WishListController from "../app/controllers/WishListController.js";
-import * as ProductController from "../app/controllers/ProductController.js";
-import * as InvoiceController from "../app/controllers/InvoiceController.js";
-import authMiddleware from "../app/middlewares/authMiddleware.js";
+import * as UserController from "../controllers/UserController.js"
+import { BrandList } from "../controllers/BrandsController.js";
+import { CategoryList } from "../controllers/CategoryController.js";
+import * as CardListController from "../controllers/CardListController.js";
+import * as WishListController from "../controllers/WishListController.js";
+import * as ProductController from "../controllers/ProductController.js";
+import * as InvoiceController from "../controllers/InvoiceController.js";
+import authMiddleware from "../middlewares/authMiddleware.js";
 
 
 // ==== User Controller router

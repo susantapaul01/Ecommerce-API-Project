@@ -1,0 +1,15 @@
+1. Front End Packages:
+    - axios
+    - Bootstrap && Bootstrap icon || (tailwind css && daiyseUI)
+    - js-cookie
+    - html-react-parset
+    - lottie-react
+    - react-hot-toast
+    - react-image-gallery
+    - react-loading-skeleton
+    - react-router-dom
+    - react-star-ratings
+    - sweetalert2
+    - zustand
+2. /src: Folder Structure
+3. 
